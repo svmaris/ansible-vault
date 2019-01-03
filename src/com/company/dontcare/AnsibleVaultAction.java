@@ -68,7 +68,7 @@ public class AnsibleVaultAction extends AnAction {
         List<String> command = new ArrayList<>();
         command.add("ansible-vault");
         command.add(cryptCommand);
-        command.add("--vault-password");
+        command.add("--vault-password-file");
         command.add(pwdFile);
         command.add(filePath);
 
